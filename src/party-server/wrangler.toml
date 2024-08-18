@@ -1,0 +1,16 @@
+name = "bench-party"
+main = "./index.ts"
+compatibility_date = "2024-08-06"
+
+routes = [
+  { "pattern" = "bench-party.sunilpai.dev", custom_domain = true }
+]
+
+[[durable_objects.bindings]]
+name = "bench"
+class_name = "Bench"
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["Bench"]
+
